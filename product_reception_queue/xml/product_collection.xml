@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productcollection name="Wheels" exportedAt="2023-09-20 07:11:32">
+    <product id="1">
+        <category>Racing Wheel</category>
+        <name>Advant Racing</name>
+        <description>Advant Racing Wheels for High Performance Cars</description>
+        <price>100</price>
+        <stock>10</stock>
+        <image>https://image.made-in-china.com/43f34j00OIeYilgMAdkR/Advant-Racing-Wheels-for-High-Performance-Cars.jpg</image>
+    </product>
+    <product id="2">
+        <category>Industrial Wheel</category>
+        <name>Forlong Wheel</name>
+        <description>Forlong Wheel Split Rim 3.00d-8 Et0 94/140/5 Tire 5.00-8 for Skid Loader and Industrial Equipment for Sale</description>
+        <price>50</price>
+        <stock>10</stock>
+        <image>https://image.made-in-china.com/43f34j00mlGrykHIrJzv/Forlong-Wheel-Split-Rim-3-00d-8-Et0-94-140-5-Tire-5-00-8-for-Skid-Loader-Industrial-Equipment-for-Sale.jpg</image>
+    </product>    
+</productcollection>

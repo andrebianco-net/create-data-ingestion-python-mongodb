@@ -1,5 +1,9 @@
-files:
-  folder_queue: "queue_products_reception/xml"
-  folder_xsl: "queue_products_reception/xsl"
+queue:
+  folder_xml: "product_reception_queue/xml"
+  folder_xsl: "product_reception_queue/xsl"
   xml: "product_collection.xml"
   xsl: "product.xsl"
+mongodb:
+  connection: "mongodb://localhost:27017"
+  database: "DocDB"
+  collection: "Products"

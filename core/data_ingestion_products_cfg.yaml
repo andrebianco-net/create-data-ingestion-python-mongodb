@@ -1,0 +1,5 @@
+files:
+  folder_queue: "queue_products_reception"
+  folder_xsl: "queue_products_reception/xsl"
+  xml: "product_collection.xml"
+  xsl: "product.xsl"

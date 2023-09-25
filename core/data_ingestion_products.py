@@ -38,6 +38,8 @@ collection = database[mdb_collection]
 for key in data_dict:
     for key2 in data_dict[key]:
         for doc in (data_dict[key][key2]):
+            doc["price"] = float(doc["price"])
+            doc["stock"] = int(doc["stock"])
             doc["createdAt"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             collection.insert_one(doc)
 

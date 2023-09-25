@@ -41,6 +41,7 @@ for key in data_dict:
             doc["price"] = float(doc["price"])
             doc["stock"] = int(doc["stock"])
             doc["createdAt"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            doc["productUpdatedAt"] = None
             collection.insert_one(doc)
 
 client.close()

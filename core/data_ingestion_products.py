@@ -42,6 +42,7 @@ for key in data_dict:
             doc["stock"] = int(doc["stock"])
             doc["createdAt"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             doc["productUpdatedAt"] = None
+            doc["admissionResult"] = None
             collection.insert_one(doc)
 
 client.close()

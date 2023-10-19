@@ -13,8 +13,6 @@ https://www.linkedin.com/in/andrebianco-net/
 
 Data Ingestion Service implementation proposes a small example of how to create a service using Python simply to solve the problem of transforming document types. Many programming languages do the same, but Python is able to do this easily. It will use a XML file with a colletion of Products, that fille will be transformed using XSLT transformation to JSON and the result will be stored into a MongoDB database that is used as a conceptual queue of documents.
 
-The Solution will be a Worker which read a MongoDB queue (Product collection) and after validate each doc it will be stored in another base via a Web API.
-
 ## How to run this project
 
 #### 1. Clone project:

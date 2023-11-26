@@ -46,3 +46,20 @@ $ python data_ingestion_products.py
 #### 6. Configure it on the linux, maybe it makes sense for you:
 
 Create a systemctl .service file and attached it into crontab.
+
+#### 7. Json used on MongoDB as example:
+
+{
+  "_id": {
+    "$oid": "651c5dcf0c7cdeb0129d3ed7"
+  },
+  "category": "Racing Wheel",
+  "name": "Advant Racing",
+  "description": "Advant Racing Wheels for High Performance Cars",
+  "price": 100,
+  "stock": 10,
+  "image": "https://image.made-in-china.com/43f34j00OIeYilgMAdkR/Advant-Racing-Wheels-for-High-Performance-Cars.jpg",
+  "createdAt": "2023-10-03 15:30:39",
+  "productUpdatedAt": "",
+  "admissionResult": ""
+}

@@ -39,15 +39,25 @@ $ python -m venv .venv
 
 $ source ./.venv/bin/activate
 
-#### 5. Run project:
+#### 5. Install dependencies:
+
+$ pip install -r requirements.txt
+
+dnspython==2.5.0
+lxml==5.1.0
+pymongo==4.6.1
+PyYAML==6.0.1
+xmltodict==0.13.0
+
+#### 6. Run project:
 
 $ python data_ingestion_products.py
 
-#### 6. Configure it on the linux, maybe it makes sense for you:
+#### 7. Configure it on the linux, maybe it makes sense for you:
 
 Create a systemctl .service file and attached it into crontab.
 
-#### 7. Json used on MongoDB as example:
+#### 8. Json used on MongoDB as example (after running the program):
 
 {
   "_id": {

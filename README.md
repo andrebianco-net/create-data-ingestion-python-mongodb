@@ -19,6 +19,16 @@ Data Ingestion Service implementation proposes a small example of how to create 
 
 $ git clone https://github.com/andrebianco-net/create-data-ingestion-python-mongodb.git
 
+
+$ docker build -t data-ingestion-container .
+$ docker run -it data-ingestion-container
+
+$ docker tag data-ingestion-container dataingestioncontainer.azurecr.io/data-ingestion-container
+$ docker push dataingestioncontainer.azurecr.io/data-ingestion-container
+$ docker login dataingestioncontainer.azurecr.io
+
+
+
 #### 2. Update file data_ingestion_products_cfg.yaml if it is necessary for you:
 
 queue:</br>

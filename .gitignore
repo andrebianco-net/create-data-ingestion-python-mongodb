@@ -1,1 +1,3 @@
 .venv
+.vscode
+data_ingestion_products_cfg.yaml

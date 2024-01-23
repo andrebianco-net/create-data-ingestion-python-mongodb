@@ -4,6 +4,6 @@ queue:
   xml: "product_collection.xml"
   xsl: "product.xsl"
 mongodb:
-  connection: "mongodb://localhost:27017"
+  connection: "mongodb://your-connection-string"
   database: "DocDB"
   collection: "Products"

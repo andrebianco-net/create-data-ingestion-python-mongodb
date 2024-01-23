@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 # Config file
-with open("data_ingestion_products_cfg.yaml", "r") as cfg:
+with open("core/data_ingestion_products_cfg.yaml", "r") as cfg:
     config = yaml.safe_load(cfg)
 
 # XML and XSL for transformation
@@ -17,8 +17,8 @@ xml_file = config["queue"]["xml"]
 folder_xsl = config["queue"]["folder_xsl"]
 xsl_file = config["queue"]["xsl"]
 
-xml = etree.parse(f'.././{folder_xml}/{xml_file}')
-xsl = etree.parse(f'.././{folder_xsl}/{xsl_file}')
+xml = etree.parse(f'.././app/{folder_xml}/{xml_file}')
+xsl = etree.parse(f'.././app/{folder_xsl}/{xsl_file}')
 
 # Conversion XML to JSON
 transformer = etree.XSLT(xsl)

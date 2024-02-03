@@ -19,16 +19,6 @@ Data Ingestion Service implementation proposes a small example of how to create 
 
 $ git clone https://github.com/andrebianco-net/create-data-ingestion-python-mongodb.git
 
-
-$ docker build -t data-ingestion-container .
-$ docker run -it data-ingestion-container
-
-$ docker tag data-ingestion-container dataingestioncontainer.azurecr.io/data-ingestion-container
-$ docker push dataingestioncontainer.azurecr.io/data-ingestion-container
-$ docker login dataingestioncontainer.azurecr.io
-
-
-
 #### 2. Update file data_ingestion_products_cfg.yaml if it is necessary for you:
 
 queue:</br>
@@ -69,6 +59,7 @@ Create a systemctl .service file and attached it into crontab.
 
 #### 8. Json used on MongoDB as example (after running the program):
 
+```json
 {
   "_id": {
     "$oid": "651c5dcf0c7cdeb0129d3ed7"
@@ -83,3 +74,22 @@ Create a systemctl .service file and attached it into crontab.
   "productUpdatedAt": "",
   "admissionResult": ""
 }
+```
+
+#### 9. From Docker to Azure Container
+
+$ docker build -t data-ingestion-container .</br>
+[$ docker run -it data-ingestion-container]</br>
+
+$ docker tag data-ingestion-container youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container</br>
+$ docker push youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container</br>
+$ docker login youruricreatedinazurecontainerregistry.azurecr.io</br>
+
+#### 10. Created In Azure as you can see
+###
+![image](https://github.com/andrebianco-net/create-data-ingestion-python-mongodb/assets/453193/e03d1428-0ca9-4a66-909a-60241bd6d0e5)
+###
+
+![image](https://github.com/andrebianco-net/create-data-ingestion-python-mongodb/assets/453193/5e9c42a1-af71-41f1-926f-7717201f6ff4)
+
+

@@ -81,9 +81,10 @@ Create a systemctl .service file and attached it into crontab.
 $ docker build -t data-ingestion-container .</br>
 [$ docker run -it data-ingestion-container]</br>
 
+$ docker login youruricreatedinazurecontainerregistry.azurecr.io</br>
 $ docker tag data-ingestion-container youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container</br>
 $ docker push youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container</br>
-$ docker login youruricreatedinazurecontainerregistry.azurecr.io</br>
+[$ docker pull youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container]</br>
 
 #### 10. Created In Azure as you can see
 ###

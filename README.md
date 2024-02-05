@@ -21,15 +21,17 @@ $ git clone https://github.com/andrebianco-net/create-data-ingestion-python-mong
 
 #### 2. Update file data_ingestion_products_cfg.yaml if it is necessary for you:
 
-queue:</br>
-  folder_xml: "product_reception_queue/xml"</br>
-  folder_xsl: "product_reception_queue/xsl"</br>
-  xml: "product_collection.xml"</br>
-  xsl: "product.xsl"</br>
-mongodb:</br>
-  connection: "mongodb://localhost:27017"</br>
-  database: "DocDB"</br>
-  collection: "Products"</br>
+```yaml
+queue:
+  folder_xml: "product_reception_queue/xml"
+  folder_xsl: "product_reception_queue/xsl"
+  xml: "product_collection.xml"
+  xsl: "product.xsl"
+mongodb:
+  connection: "mongodb://localhost:27017"
+  database: "DocDB"
+  collection: "Products"
+```
 
 #### 3. Create the virtual environment:
 

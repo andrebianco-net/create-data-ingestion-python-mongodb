@@ -17,7 +17,9 @@ Data Ingestion Service implementation proposes a small example of how to create 
 
 #### 1. Clone project:
 
+```bash
 $ git clone https://github.com/andrebianco-net/create-data-ingestion-python-mongodb.git
+```
 
 #### 2. Update file data_ingestion_products_cfg.yaml if it is necessary for you:
 
@@ -35,15 +37,21 @@ mongodb:
 
 #### 3. Create the virtual environment:
 
+```bash
 $ python -m venv .venv
+```
 
 #### 4. Activate the virtual environment:
 
+```bash
 $ source .venv/bin/activate
+```
 
 #### 5. Install dependencies:
 
+```bash
 $ pip install -r requirements.txt
+```
 
 dnspython==2.5.0
 lxml==5.1.0
@@ -53,7 +61,9 @@ xmltodict==0.13.0
 
 #### 6. Run project:
 
+```bash
 $ python data_ingestion_products.py
+```
 
 #### 7. Configure it on the linux, maybe it makes sense for you:
 
@@ -80,13 +90,29 @@ Create a systemctl .service file and attached it into crontab.
 
 #### 9. From Docker to Azure Container
 
-$ docker build -t data-ingestion-container .</br>
-[$ docker run -it data-ingestion-container]</br>
+```bash
+$ docker build -t data-ingestion-container .
+```
 
-$ docker login youruricreatedinazurecontainerregistry.azurecr.io</br>
-$ docker tag data-ingestion-container youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container</br>
-$ docker push youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container</br>
-[$ docker pull youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container]</br>
+```bash
+[$ docker run -it data-ingestion-container]
+```
+
+```bash
+$ docker login youruricreatedinazurecontainerregistry.azurecr.io
+```
+
+```bash
+$ docker tag data-ingestion-container youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container
+```
+
+```bash
+$ docker push youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container
+```
+
+```bash
+[$ docker pull youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container]
+```
 
 #### 10. Created In Azure as you can see
 ###

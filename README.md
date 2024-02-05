@@ -114,7 +114,7 @@ $ docker push youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-c
 [$ docker pull youruricreatedinazurecontainerregistry.azurecr.io/data-ingestion-container]
 ```
 
-#### 10. Created In Azure as you can see
+#### 10. Created In Azure Cloud Computing
 ###
 ![image](https://github.com/andrebianco-net/create-data-ingestion-python-mongodb/assets/453193/e03d1428-0ca9-4a66-909a-60241bd6d0e5)
 ###

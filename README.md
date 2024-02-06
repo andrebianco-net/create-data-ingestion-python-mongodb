@@ -5,7 +5,7 @@ Creating a data ingestion using XML, Python, JSON and MongoDB.
 
 This example is an implementation where I used Python to create a program for transforms XML via XSLT to JSON and serialize it as doc into MongoDB. The config file used here is a YAML file. Read the [readme file ](https://github.com/andrebianco-net/andrebianco-net#readme) in order to obtain more details about the finality of this solution.
 
-In order to know more aboute my career check my Linkedin profile, please.
+In order to know more about my career check my Linkedin profile, please.
 
 https://www.linkedin.com/in/andrebianco-net/
 
